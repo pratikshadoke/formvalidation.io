@@ -163,19 +163,19 @@ a:hover {
 
 @keyframes animate {
     0% {
-        background-image: linear-gradient(rgba(240, 98, 146, 20), rgba(187, 222, 251, 0.5)), url('./img/events_single_three.jpg');
+        background-image: linear-gradient(rgba(240, 98, 146, 20), rgba(187, 222, 251, 0.5)), url('events_single_three.jpg');
     }
     25% {
-        background-image: linear-gradient(rgba(240, 98, 146, 20), rgba(187, 222, 251, 0.5)), url('./img/events_single_two.jpg');
+        background-image: linear-gradient(rgba(240, 98, 146, 20), rgba(187, 222, 251, 0.5)), url('events_single_two.jpg');
     }
     50% {
-        background-image: linear-gradient(rgba(240, 98, 146, 20), rgba(187, 222, 251, 0.5)), url('./img/our_cuauses_one.jpg');
+        background-image: linear-gradient(rgba(240, 98, 146, 20), rgba(187, 222, 251, 0.5)), url('our_cuauses_one.jpg');
     }
     75% {
-        background-image: linear-gradient(rgba(240, 98, 146, 20), rgba(187, 222, 251, 0.5)), url('./img/our_cuauses_two.jpg');
+        background-image: linear-gradient(rgba(240, 98, 146, 20), rgba(187, 222, 251, 0.5)), url('our_cuauses_two.jpg');
     }
     100% {
-        background-image: linear-gradient(rgba(240, 98, 146, 20), rgba(187, 222, 251, 0.5)), url('./img/our_cuauses_three.jpg');
+        background-image: linear-gradient(rgba(240, 98, 146, 20), rgba(187, 222, 251, 0.5)), url('our_cuauses_three.jpg');
     }
 }
 
