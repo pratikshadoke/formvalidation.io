@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+
+    <title>Form Validation by Pratiksha Doke</title>
+
+</head>
+
+<body style="background-color: black;font-family:'Poppins', sans-serif;background-image:linear-gradient(rgba(240, 98, 146,50),rgba(187, 222, 251 
+,0.5));
+    background-position: center; 
+    background-attachment: fixed;
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    color: #ffffff;">
+    <div class="d-flex align-items-center">
+        <ul class="list-group p-3 mx-auto" style="width: fit-content;">
+            <li class="list-group-item" style="list-style:none;background-image:linear-gradient(to left,rgba(216, 27, 96 ,100),rgba(26, 35, 126,0.5));
+            background-position: center; 
+            background-attachment: fixed;
+            background-repeat: no-repeat; 
+            background-size: cover; 
+            border-color: rgb(66, 61, 61);">
+                <div class="row">
+                    <div class="col-auto">
+                        <div class="large d-flex justify-content-center align-items-center font-weight-bold font- mt-2" style="color: #FFFFFF;">
+                            <div class="h2 d-flex justify-content-center align-items-center  text-center" style="width:100px;height:75px;border: 1px solid white;border-radius: 50px;"><i class="fas fa-address-card" style="font-size: 50px;border-radius: 20px!important;"></i></div>
+                        </div>
+                        <div class="large d-flex justify-content-center align-items-center font-weight-bold font- mt-2" style="color: #FFFFFF;">
+                            <div class="h2 text-center font-weight-bold">Registration Form</div>
+                        </div>
+                        <div class="mb-3 d-flex justify-content-center align-items-center ">
+                            <form name="myForm">
+                                Name: <input type="text" name="name" class="form-control" id="inputname" style="background-color: transparent;color:#fff;border-radius: 0px 20px 0px 20px" placeholder="Enter name here" required autocomplete="off"> Email:
+                                <input type="text" name="email" class="form-control" id="inputemail" placeholder="Enter email herer" style="background-color: transparent;color:#fff;border-radius: 0px 20px 0px 20px" required autocomplete="off"> Phone:
+                                <input type="text" name="phone" class="form-control" id="inputphone" style="border-radius: 0px 20px 0px 20px;background-color: transparent;color:#fff;" placeholder="Enter phone number here" required autocomplete="off">
+
+                                <div class="text-center mt-4">
+                                    <textarea class="text-center " id="address" rows="4" style="color:#fff;background-color: transparent;border-radius:0px 50px 0px 50px;border: 1px solid white;outline: none;" cols="40" placeholder="Enter Your Adress here..."></textarea></div>
+                                Country: <select class="text-center mt-2" name="country" id="inputcountry" style="color: black;border-radius:12px;" required autocomplete="off">
+                                    <option value="India" >India</option>
+                                    <option value="Africa">Africa</option>
+                                    <option value="America">America</option>
+                                    <option value="England">England</option>
+                                    </select>
+                                <div class="text-center mt-4">
+                                    <input class="text-center font-weight-bold" name="submit" onclick="formsubmit()" type="submit" value="Submit" id="submit" style="background-color: #fff;border: 1px solid #3949AB;border-radius:20px;padding: 4px 8px;outline: none;">
+                                </div>
+
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <div class="text-center font-weight-bold h4">Designed by : Pratiksha Doke</div>
+    <script>
+        let register = document.getElementById("submit");
+
+        function formsubmit() {
+            var x = document.getElementById("inputname");
+            var x1 = document.getElementsByName("name");
+            getdata(x.value, "Name");
+            var y = document.getElementById("inputemail");
+            getdata(y.value, "Email");
+            var z = document.getElementById("inputphone");
+            getdata(z.value, "Phone number");
+            var p = document.getElementById("address");
+            getdata(p.value, "Address");
+        }
+
+        function getdata(data, nameis) {
+
+            if (data === "") {
+                return alert(`Please enter valid ${nameis}`);
+
+
+            } else if (data === "inputphone") {
+                if (isNaN(data))
+                    alert("Phone number contains illegal characters");
+                return false;
+            } else if (data.length != 10) {
+                alert("The Phone number is of wrong length	\nPlease Enter 10 digit mobile no.");
+                return false;
+            }
+        }
+    </script>
+</body>
+
+</html>
