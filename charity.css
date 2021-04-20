@@ -1,0 +1,297 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,700&display=swap");
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+}
+
+.single-Promo {
+    box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: linear-gradient(rgba(240, 98, 146, 20), rgba(187, 222, 251, 0.5)), url('./img/events_single_one.jpg');
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #ffffff;
+    background-size: cover;
+    height: calc(10vh - 80px);
+    text-align: center;
+    animation: animate 5s infinite linear;
+}
+
+nav {
+    background: #0082e6;
+    height: 80px;
+    width: 100%;
+}
+
+label.logo {
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 20px 0px 20px 0px;
+    text-transform: uppercase;
+}
+
+a.active,
+a:hover {
+    background: #1b9bff;
+    transition: .5s;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+@media (max-width: 952px) {
+    label.logo {
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    nav ul li a {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 858px) {
+    .checkbtn {
+        display: block;
+    }
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2c3e50;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a {
+        font-size: 20px;
+    }
+    a:hover,
+    a.active {
+        background: none;
+        color: #0082e6;
+    }
+    #check:checked~ul {
+        left: 0;
+    }
+}
+
+#home {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.textname {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 0vh;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#submit {
+    text-align: center;
+    font-weight: bold;
+    background-color: #fff;
+    border: 1px solid #3949AB;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+    cursor: pointer;
+    transition: .10s;
+}
+
+@keyframes animate {
+    0% {
+        background-image: linear-gradient(rgba(240, 98, 146, 20), rgba(187, 222, 251, 0.5)), url('./img/events_single_three.jpg');
+    }
+    25% {
+        background-image: linear-gradient(rgba(240, 98, 146, 20), rgba(187, 222, 251, 0.5)), url('./img/events_single_two.jpg');
+    }
+    50% {
+        background-image: linear-gradient(rgba(240, 98, 146, 20), rgba(187, 222, 251, 0.5)), url('./img/our_cuauses_one.jpg');
+    }
+    75% {
+        background-image: linear-gradient(rgba(240, 98, 146, 20), rgba(187, 222, 251, 0.5)), url('./img/our_cuauses_two.jpg');
+    }
+    100% {
+        background-image: linear-gradient(rgba(240, 98, 146, 20), rgba(187, 222, 251, 0.5)), url('./img/our_cuauses_three.jpg');
+    }
+}
+
+.activity {
+    width: 100%;
+    margin: 4px 8px;
+}
+
+.footer_carosal {
+    background: #f5f5f5 none repeat scroll 0 0;
+    height: 150px;
+    padding: 60px 0;
+}
+
+.footer {
+    background: #2e2e2e;
+    padding-top: 80px
+}
+
+.footer .footer-charity-text h2 {
+    color: #fff;
+    font-size: 25px;
+    font-weight: 700;
+    margin: 0 0 27px;
+}
+
+.footer .footer-charity-text p {
+    color: rgb(91, 91, 91);
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.footer .footer-charity-text hr {
+    border-color: rgb(91, 91, 91);
+}
+
+.footer .footer-charity-text p i {
+    color: #5b5b5b;
+    font-size: 18px;
+    margin-right: 20px;
+}
+
+.footer-charity-text hr {
+    margin: 35px 0;
+}
+
+.footer .footer-text h3 {
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 8px 0 25px;
+}
+
+.footer .footer-text ul {
+    margin: 0;
+    padding: 0;
+}
+
+.footer .footer-text.one ul li i {
+    color: rgb(91, 91, 91);
+    font-size: 15px;
+    left: -7px;
+    top: 3px;
+}
+
+.footer .footer-text.one ul li a {
+    color: rgb(91, 91, 91);
+    font-size: 15px;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.footer .footer-text.two ul li a {
+    color: rgb(91, 91, 91);
+    font-size: 15px;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.footer .footer-text ul li {
+    margin-bottom: 10px;
+}
+
+.footer .footer-text.two ul li a:hover,
+.footer .footer-text.one ul li a:hover,
+.footer .footer-text.one ul li i:hover,
+.footer .footer-charity-text p i:hover {
+    color: #c0c0c0;
+}
+
+.footer .footer_bottom p {
+    background: #232323 none repeat scroll 0 0;
+    color: #cacaca;
+    font-size: 15px;
+    font-weight: 400;
+    height: 75px;
+    line-height: 75px;
+    margin: 70px 0 0;
+    padding: 0;
+    text-align: center;
+}
+
+.footer .footer_bottom p a {
+    color: #2ad880;
+    text-decoration: none;
+}
+
+.block-wrapper {
+    background-image: url(img/count.jpg);
+    background-size: 100% 100%;
+}
+
+.block-wrapper {
+    padding: 60px 0;
+    margin-top: 130px;
+}
